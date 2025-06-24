@@ -257,6 +257,8 @@ frontend:
       value: "keepappkey"
     - name: FRIGADE_DISABLED
       value: "true"
+    - name: NEXTAUTH_URL
+      value: "http://localhost:3000"
   # -- Name of the secret to include
   envFromSecret: ""
 
