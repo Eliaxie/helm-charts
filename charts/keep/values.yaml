@@ -243,6 +243,8 @@ frontend:
   env:
     - name: NEXTAUTH_SECRET
       value: secret
+    - name: NEXTAUTH_URL
+      value: "http://localhost:3000" # Set this to the URL of your frontend. Used for authentication and in some providers.
     # Shahar: took me whole day to figure out that I need to set this to 1
     # https://github.com/nextauthjs/next-auth/issues/600
     - name: VERCEL
@@ -257,8 +259,6 @@ frontend:
       value: "keepappkey"
     - name: FRIGADE_DISABLED
       value: "true"
-    - name: NEXTAUTH_URL
-      value: "http://localhost:3000" # Set this to the URL of your frontend. Used for authentication and in some providers.
   # -- Name of the secret to include
   envFromSecret: ""
 
