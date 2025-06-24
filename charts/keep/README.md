@@ -180,20 +180,20 @@ Keep Helm Chart
 | frontend.envRenderSecret | object | `{}` | Sensible environment variables will be rendered as a new secret object; escape {{ in secret values to avoid Helm interpretation. |
 | frontend.env[0].name | string | `"NEXTAUTH_SECRET"` |  |
 | frontend.env[0].value | string | `"secret"` |  |
-| frontend.env[7].name | string | `"NEXTAUTH_URL"` |  |
-| frontend.env[7].value | string | `"http://localhost:3000"` | Set this to the URL of your frontend. |
-| frontend.env[1].name | string | `"VERCEL"` |  |
-| frontend.env[1].value | int | `1` |  |
-| frontend.env[2].name | string | `"ENV"` |  |
-| frontend.env[2].value | string | `"development"` |  |
-| frontend.env[3].name | string | `"NODE_ENV"` |  |
+| frontend.env[1].name | string | `"NEXTAUTH_URL"` |  |
+| frontend.env[1].value | string | `"http://localhost:3000"` | Set this to the URL of your frontend. |
+| frontend.env[2].name | string | `"VERCEL"` |  |
+| frontend.env[2].value | int | `1` |  |
+| frontend.env[3].name | string | `"ENV"` |  |
 | frontend.env[3].value | string | `"development"` |  |
-| frontend.env[4].name | string | `"HOSTNAME"` |  |
-| frontend.env[4].value | string | `"0.0.0.0"` |  |
-| frontend.env[5].name | string | `"PUSHER_APP_KEY"` |  |
-| frontend.env[5].value | string | `"keepappkey"` |  |
-| frontend.env[6].name | string | `"FRIGADE_DISABLED"` |  |
-| frontend.env[6].value | string | `"true"` |  |
+| frontend.env[4].name | string | `"NODE_ENV"` |  |
+| frontend.env[4].value | string | `"development"` |  |
+| frontend.env[5].name | string | `"HOSTNAME"` |  |
+| frontend.env[5].value | string | `"0.0.0.0"` |  |
+| frontend.env[6].name | string | `"PUSHER_APP_KEY"` |  |
+| frontend.env[6].value | string | `"keepappkey"` |  |
+| frontend.env[7].name | string | `"FRIGADE_DISABLED"` |  |
+| frontend.env[7].value | string | `"true"` |  |
 | frontend.healthCheck.enabled | bool | `false` |  |
 | frontend.healthCheck.probes.livenessProbe.httpGet.path | string | `"/"` |  |
 | frontend.healthCheck.probes.livenessProbe.httpGet.port | string | `"http"` |  |
