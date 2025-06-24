@@ -258,7 +258,7 @@ frontend:
     - name: FRIGADE_DISABLED
       value: "true"
     - name: NEXTAUTH_URL
-      value: "http://localhost:3000"
+      value: "http://localhost:3000" # Set this to the URL of your frontend. Used for authentication and in some providers.
   # -- Name of the secret to include
   envFromSecret: ""
 
