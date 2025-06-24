@@ -180,6 +180,8 @@ Keep Helm Chart
 | frontend.envRenderSecret | object | `{}` | Sensible environment variables will be rendered as a new secret object; escape {{ in secret values to avoid Helm interpretation. |
 | frontend.env[0].name | string | `"NEXTAUTH_SECRET"` |  |
 | frontend.env[0].value | string | `"secret"` |  |
+| frontend.env[7].name | string | `"NEXTAUTH_URL"` |  |
+| frontend.env[7].value | string | `"http://localhost:3000"` | Set this to the URL of your frontend. |
 | frontend.env[1].name | string | `"VERCEL"` |  |
 | frontend.env[1].value | int | `1` |  |
 | frontend.env[2].name | string | `"ENV"` |  |
